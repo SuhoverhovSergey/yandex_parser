@@ -139,7 +139,7 @@ public class Parser {
         try {
             System.out.println("Введите поисковый запрос:");
             Scanner input = new Scanner(System.in);
-            String query = URLEncoder.encode(input.next(), "UTF-8");
+            String query = URLEncoder.encode(input.nextLine(), "UTF-8");
             System.out.println();
 
             Parser parser = new Parser();
